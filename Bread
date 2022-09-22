@@ -1,0 +1,130 @@
+ackage Bread;
+
+public class Bread {
+    private String milk;
+    private String sesame;
+    private String levelOfDifficulty;
+    private String sourCream;
+    private String cookingSpray;
+    private String butter;
+
+    private String flour, water, salt, sugar, bakingPowder, yeast, breadName, state, recipe;
+
+    //Constructor
+    public Bread(String flour, String water, String salt, String sugar, String bakingPowder, String yeast,
+                 String breadName, String state, String recipe) {
+        this.flour = flour;
+        this.water = water;
+        this.salt = salt;
+        this.sugar = sugar;
+        this.bakingPowder = bakingPowder;
+        this.yeast = yeast;
+        this.breadName = breadName;
+        this.state = state;
+        this.recipe = recipe;
+    }
+
+    
+    //Getter & Setter
+
+    public String getFlour() {
+        return flour;
+    }
+
+    public void setFlour(String flour) {
+        this.flour = flour;
+    }
+
+    public String getWater() {
+        return water;
+    }
+
+    public void setWater(String water) {
+        this.water = water;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public String getSugar() {
+        return sugar;
+    }
+
+    public void setSugar(String sugar) {
+        this.sugar = sugar;
+    }
+
+    public String getBakingPowder() {
+        return bakingPowder;
+    }
+
+    public void setBakingPowder(String bakingPowder) {
+        this.bakingPowder = bakingPowder;
+    }
+
+    public String getYeast() {
+        return yeast;
+    }
+
+    public void setYeast(String yeast) {
+        this.yeast = yeast;
+    }
+
+    public String getBreadName() {
+        return breadName;
+    }
+
+    public void setBreadName(String breadName) {
+        this.breadName = breadName;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
+    }
+
+    // Bake method
+    public void bake(String state){
+        if(state.equals("baked"))
+            return ;
+        else
+            state="baked";
+    }
+
+    //getIngredients method
+
+    public String toString() {
+        return
+                "Flour = " + flour + "\n" +
+                        "Water = " + water + "\n" +
+                        "Salt = " + salt + "\n" +
+                        "Sugar = " + sugar + "\n" +
+                        "Baking Powder = " + bakingPowder + "\n" +
+                        "Yeast = " + yeast + "\n" +
+                        "Bread Name = " + breadName + "\n";
+    }
+    public String getIngredients(){
+        return "Ingredients of Bread are: \n" +
+        flour + " cups of flour \n " + water + " cups of water\n" +
+        salt + " tsp of salt \n " + sugar + " tsp of sugar\n" +
+        yeast + " tsp of yeast\n";
+    }
+
+    
+}
