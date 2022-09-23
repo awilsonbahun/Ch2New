@@ -1,0 +1,81 @@
+package Bread;
+
+public class Muffins extends Bread {
+        private String flour, cookingSpray, sourCream, margarine, breadNam;
+
+        public Muffins(String flour, String cookingSpray, String sourCream, String margarine, String breadName) {
+            super(flour, cookingSpray, sourCream, margarine, breadName);
+            this.flour = flour;
+            this.cookingSpray = cookingSpray;
+            this.sourCream = sourCream;
+            this.margarine = margarine;
+            this.breadName = breadName;
+        
+        }
+
+        //Getter & Setter
+
+        public String getFlour() {
+            return flour;
+        }
+
+        public void setFlour(String flour) {
+            this.flour = flour;
+        }
+
+        public String getCookingSpray() {
+            return cookingSpray;
+        }
+
+        public void setCookingSpray(String water) {
+            this.cookingSpray = cookingSpray;
+        }
+
+        public String getSourCream() {
+            return sourCream;
+        }
+
+        public void setSourCream(String sourCream) {
+            this.sourCream = sourCream;
+        }
+
+        public String getMargarine() {
+            return margarine;
+        }
+
+        public void setMargarine(String margarine) {
+            this.margarine = margarine;
+        }
+
+        public String getBreadName() {
+            return breadName;
+        }
+
+        public void setBreadName(String breadName) {
+            this.breadName = breadName;
+        }
+        
+
+        public String getIngredients() {
+            return "Ingredients of Muffins are:\n" +
+                    getFlour() + " cups of flour\n" + getCookingSpray() + " bottles of cooking spray\n" +
+                    getSourCream() + " cup of sourCream\n" + getMargarine() + " cup of margarine\n" ;
+        }
+
+        public String getRecipe() {
+            return "A recipe of Muffins: \n" +
+                    "1. Preheat the oven to 400 degrees F." +
+                    "2. In an electric mixer, cream the margarine and sour cream. " +
+                    "Add the flour and mix well. Drop large spoonfuls of the dough into a" +
+                    " muffin pan that has been sprayed with cooking spray or lined with muffin cups. " +
+                    "Bake for until the tops of the muffins are golden brown, 15 to 20 minutes.";}
+
+        // to String
+        @Override public String toString() {
+            return "Flour = " + flour + '\n' +
+                    "Cooking Spray = " + cookingSpray + "\n" +
+                    "Sour Cream = " + sourCream + "\n" +
+                    "Margarine = " + margarine + "\n" +
+                    "Bread Name = " + breadName + "\n" +
+        }
+    }
