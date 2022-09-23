@@ -1,0 +1,107 @@
+package Bread;
+
+public class SourdoughBread extends Bread{
+    private String flour, water, salt, sugar, bakingPowder, yeast, breadName, state, recipe ;
+
+    public SourdoughBread(String flour, String water, String salt, String sugar, String bakingPowder, String yeast, String breadName, String state, String recipe) {
+        super(flour, water, salt, sugar, bakingPowder, yeast, breadName, state, recipe);
+        this.flour = flour;
+        this.water = water;
+        this.salt = salt;
+        this.sugar = sugar;
+        this.bakingPowder = bakingPowder;
+        this.yeast = yeast;
+        this.breadName = breadName;
+        this.state = state;
+        this.recipe = recipe;
+    }
+
+    //Getter 
+
+    public String getFlour() {
+        return flour;
+    }
+    public String getWater() {
+        return water;
+    }
+    public String getSalt() {
+        return salt;
+    }
+    public String getSugar() {
+        return sugar;
+    }
+    public String getBakingPowder() {
+        return bakingPowder;
+    }
+    public String getYeast() {
+        return yeast;
+    }
+    public String getBreadName() {
+        return breadName;
+    }
+    public String getState() {
+        return state;
+    }
+    public String getRecipe() {
+        return recipe;
+    }
+
+// Setter
+    public void setFlour(String flour) {
+        this.flour = flour;
+    }
+    
+    public void setWater(String water) {
+        this.water = water;
+    }
+    
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+    
+    public void setSugar(String sugar) {
+        this.sugar = sugar;
+    }
+    
+    public void setBakingPowder(String bakingPowder) {
+        this.bakingPowder = bakingPowder;
+    }
+    
+    public void setYeast(String yeast) {
+        this.yeast = yeast;
+    }
+
+    public void setBreadName(String breadName) {
+        this.breadName = breadName;
+    }
+    
+    public void setState(String state) {
+        this.state = state;
+    }
+    
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
+    }
+
+    // Recipe
+
+    public String recipe(String flour, String water, String salt, String sugar, String bakingPowder, String yeast, String breadName, String state, String recipe, String flour1, String water1, String salt1, String sugar1, String bakingPowder1, String yeast1, String breadName1, String state1, String recipe1) {
+        // Operation for recipe
+        return recipe ;
+    }
+
+    // to String
+    @Override
+    public String toString() {
+        return "SourdoughBread " +
+                "Flour = " + flour + "\n" +
+                "Water = " + water + "\n" +
+                "Salt = " + salt + "\n" +
+                "Sugar = " + sugar + "\n" +
+                "BakingPowder = " + bakingPowder + "\n" +
+                "Yeast = " + yeast + "\n" +
+                "Bread Name = " + breadName + "\n" +
+                "State = " + state + "\n" +
+                "Recipe = " + recipe + "\n";
+    }
+}
