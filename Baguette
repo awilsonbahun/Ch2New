@@ -1,0 +1,127 @@
+package Bread;
+
+public class Baguette extends Bread{
+    private String baguette;
+
+    public Baguette(String flour, String water, String salt, String sugar, String bakingPowder, String yeast,
+                           String breadName, String state, String recipe) {
+        super(flour, water, salt, sugar, bakingPowder, yeast, breadName, state, recipe);
+
+    }
+    public Baguette(String flour, String water, String salt, String sugar, String bakingPowder, String yeast,
+                 String breadName, String state, String recipe) {
+        this.flour = flour;
+        this.water = water;
+        this.salt = salt;
+        this.sugar = sugar;
+        this.bakingPowder = bakingPowder;
+        this.yeast = yeast;
+        this.breadName = breadName;
+        this.state = state;
+        this.recipe = recipe;
+    }
+
+
+    //Getter & Setter
+
+    public String getFlour() {
+        return flour;
+    }
+
+    public void setFlour(String flour) {
+        this.flour = flour;
+    }
+
+    public String getWater() {
+        return water;
+    }
+
+    public void setWater(String water) {
+        this.water = water;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public String getSugar() {
+        return sugar;
+    }
+
+    public void setSugar(String sugar) {
+        this.sugar = sugar;
+    }
+
+    public String getBakingPowder() {
+        return bakingPowder;
+    }
+
+    public void setBakingPowder(String bakingPowder) {
+        this.bakingPowder = bakingPowder;
+    }
+
+    public String getYeast() {
+        return yeast;
+    }
+
+    public void setYeast(String yeast) {
+        this.yeast = yeast;
+    }
+
+    public String getBreadName() {
+        return breadName;
+    }
+
+    public void setBreadName(String breadName) {
+        this.breadName = breadName;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
+    }
+
+
+    public String getIngredients(){
+        return "Ingredients of Bread are: \n" +
+                flour + " cups of flour \n " + water + " cups of water\n" +
+                salt + " tsp of salt \n " + sugar + " tsp of sugar\n" +
+                yeast + " tsp of yeast\n";
+    }
+
+    public String getRecipe() {
+        return "Mix the dry ingredients together and add water. " +
+                "Cover with plastic wrap and let sit overnight (up to 20 hours) on the countertop in a well oiled bowl." +
+                "Generously flour your hands and your baking sheet." +
+                "Form dough into baguette shape (about 12 inches long) and let it rise in a warm place for 1-2 hours." +
+                "Bake in the oven for ten minutes with a pan of boiled water resting on the bottom rack." +
+                " Remove the water and bake until golden brown." +
+    }
+
+    
+    public String toString(){
+        return "Flour = " + flour + "\n" +
+                "Water = " + water + "\n" +
+                "Salt = " + salt + "\n" +
+                "Sugar = " + sugar + "\n" +
+                "Baking Powder = " + bakingPowder + "\n" +
+                "Yeast = " + yeast + "\n" +
+                "Bread Name = " + breadName + "\n";
+    }
+    }
+}
