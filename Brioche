@@ -1,0 +1,86 @@
+package Bread;
+
+public class Brioche extends Bread {
+    private String flour, water, salt, butter, breadName;
+
+    public Pastry(String flour, String water, String salt, String butter, String breadName) {
+        super(flour, water, salt, butter, breadName);
+        this.flour = flour;
+        this.water = water;
+        this.salt = salt;
+        this.butter = butter;
+        this.breadName = breadName;
+    }
+
+    //Getter & Setter
+
+    public String getFlour() {
+        return flour;
+    }
+
+    public void setFlour(String flour) {
+        this.flour = flour;
+    }
+
+    public String getWater() {
+        return water;
+    }
+
+    public void setWater(String water) {
+        this.water = water;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public String getButter() {
+        return butter;
+    }
+
+    public void setButter(String sugar) {
+        this.butter = butter;
+    }
+
+    public String getBreadName() {
+        return breadName;
+    }
+
+    public void setBreadName(String breadName) {
+        this.breadName = breadName;
+    }
+
+
+    public String getIngredients() {
+        return "Ingredients of Pastry are:\n" +
+                getFlour() + " cups of flour\n" + getWater() + " cups of water\n" +
+                getSalt() + " tsp of salt\n" + getButter() + " tsp of butter\n";
+    }
+
+    public String getRecipe() {
+        return "1.First, activate the yeast. Since we’re using active dry yeast, the yeast needs to be dissolved and activated.\n" +
+                " This will ensure the yeast incorporates evenly into the dough. \n" +
+                "Place the milk and honey in the mixer bowl and sprinkle the yeast on top. \n" +
+                "Gently whisk to mix the yeast, and let it sit for about 15 minutes. " +
+                "In that time the yeast should become frothy and bubbly.\n"+
+                "2.Add the vanilla, sugar, large eggs and egg yolk, and just break up the yolks.\n" +
+                "\n" +
+                "Add the flour, and finally, add the salt over the flour (this is important! Do NOT add the salt directly to the yeast mix).\n" +
+                "\n" +
+                "Using the hook of your mixer, or a dough whisk, mix all the ingredients in the mixing bowl to form a scraggly dough.\n" +
+                "\n" +
+                "Place the bowl on your mixer with the dough hook attached. Start kneading the dough on speed 2 – 3 (low – medium low speed) for about 1 minute."
+
+        // to String
+        @Override public String toString() {
+            return "Flour = " + flour + '\n' +
+                    "Water = " + water + "\n" +
+                    "Salt = " + salt + "\n" +
+                    "Butter = " + butter + "\n" +
+                    "Bread Name = " + breadName + "\n" +
+        }
+    }
