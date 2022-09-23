@@ -1,0 +1,50 @@
+package Bread;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BakingBreadTester {
+    public static void main(String[] args) {
+        Bread bread1 = new  Bread("5.00","1.50","2.5","1.00",
+                "1","2","Multigrain","Baked","Multigrain");
+        bread1.bake("Baked");
+        System.out.println(bread1);
+        List<Bread> bread = new ArrayList<>();
+        bread.add(bread1);
+        for(Bread b: bread){
+            System.out.println(b.getIngredients());
+            System.out.println(b.getRecipe());
+        }
+        Brioche bread2 = new Brioche("2.00","0.5","1.00","10.00 ounces", "Brioche","medium");
+        System.out.println(bread2);
+        List<Brioche> bread = new ArrayList<>();
+        bread.add(bread2);
+        for(Brioche b2: bread){
+            System.out.println(b2.getIngredients());
+            System.out.println(b2.getRecipe());
+        }
+        Muffins bread3 = new Muffins("2.00","1.00","1.00","1.00", "Muffins","easy");
+        System.out.println(bread2);
+        List<Muffins> newbread = new ArrayList<>();
+        newbread.add(bread3);
+        for(Muffins b3: newbread){
+            System.out.println(b3.getIngredients());
+            System.out.println(b3.getRecipe());
+        }
+        YellowBread bread4 = new YellowBread("1.00","3.00","3.00","2.00", "2.00","2.00","1.00","1.00","White Bread","Not Baked","Recipe");
+        System.out.println(bread4);
+        List<YellowBread> newbread2 = new ArrayList<>();
+        newbread2.add(bread4);
+        for(YellowBread b4: newbread2){
+            System.out.println(b4.getIngredients());
+            System.out.println(b4.getRecipe());
+        }
+        Baguette bread5 = new YellowBread("1.00","3.00","3.00","2.00", "2.00","2.00","1.00","1.00","Baguette","Not Baked","Recipe");
+        System.out.println(bread5);
+        List<Baguette> newbread3 = new ArrayList<>();
+        newbread3.add(bread5);
+        for(Baguette b5: newbread3){
+            System.out.println(b5.getIngredients());
+            System.out.println(b5.getRecipe());  
+    }
+}
