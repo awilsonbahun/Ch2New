@@ -1,0 +1,156 @@
+package Bread;
+
+public class YellowBread extends Bread {
+    private String milk, flour, butter, salt, sugar, egg, sesame, yeast, breadName, state, recipe;
+
+    public YellowBread(String milk, String flour, String butter, String salt, String sugar, String egg, String sesame, String yeast, String breadName, String state, String recipe) {
+        super(milk, flour, butter, salt, sugar, eggWhites, sesameSeeds, yeast, breadName, state, recipe);
+        this.milk = milk;
+        this.flour = flour;
+        this.butter = butter;
+        this.salt = salt;
+        this.sugar = sugar;
+        this.egg = egg;
+        this.sesame= sesame;
+        this.yeast = yeast;
+        this.breadName = breadName;
+        this.state = state;
+        this.recipe = recipe;
+    }
+
+    //Getter & Setter
+    public String getMilk() {
+        return milk;
+    }
+
+    public void setMilk(String milk) {
+        this.milk = milk;
+    }
+
+    public String getFlour() {
+        return flour;
+    }
+
+    public void setFlour(String flour) {
+        this.flour = flour;
+    }
+
+    public String getButter() {
+        return butter;
+    }
+
+    public void setButter(String butter) {
+        this.butter = butter;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public String getSugar() {
+        return sugar;
+    }
+
+    public void setSugar(String sugar) {
+        this.sugar = sugar;
+    }
+
+    public String getEgg() {
+        return egg;
+    }
+
+    public void setEggWhites(String egg) {
+        this.egg = egg;
+    }
+
+    public String getSesame() {
+        return sesame;
+    }
+
+    public void setSesame(String sesame) {
+        this.sesame = sesame;
+    }
+
+    public String getYeast() {
+        return yeast;
+    }
+
+    public void setYeast(String yeast) {
+        this.yeast = yeast;
+    }
+
+    public String getBreadName() {
+        return breadName;
+    }
+
+    public void setBreadName(String breadName) {
+        this.breadName = breadName;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
+    }
+
+    // Recipe
+    public String getIngredients() {
+        return "Ingredients of White Bread are:\n" +
+                getMilk() + " cups of milk\n" + getFlour() + " cups of flour\n" + getButter() + " cups of butter\n" +
+                getSalt() + " tsp of salt\n" + getSugar() + " cup of sugar\n" + getEgg() + " egg\n" +
+                getSesame() + " tbsp of sesame seeds\n" + getYeast() + " tbsp of yeast\n" + getBreadName() + "White Bread\n" + getRecipe() + "recipe\n";
+    }
+
+    public String getRecipe() {
+        return "A recipe of a Yellow Bread: \n" +
+                "1.Combine 1 cup lukewarm water in a large mixing bowl with yeast and sugar. Stir until dissolved. " +
+                "Add ½ cup flour and whisk together. Place the mixing bowl " +
+                "in a warm (not hot) place, uncovered. Wait about 15 minutes or until mixture is frothy and bubbling a bit"+
+
+                "2. Now add salt, olive oil, and the remaining flour (keep about ½ cup of the flour for dusting later)." +
+                " Stir until mixture forms a shaggy mass."+
+                "Dust with a little flour, then knead the mixture inside the bowl for about 1 minute incorporating any stray bits."+
+                "Dust a clean working surface with just a little bit of flour. Knead lightly for 2 minutes or so until smooth."+" +
+            "Cover and let the dough rest for 10 minutes, then knead again for a couple more minutes."+
+                    "The dough should be soft and a little bit moist, you can help it with a little dusting flour, but try not to add too much."+
+                "3.Using a floured rolling pin, roll one of the pieces into a circle that's 8-9 inches wide and about a quarter inch thick."+
+                    "It helps to lift and turn the dough frequently as you roll so that dough doesn't stick to your counter too much. "+
+                    "(If dough starts to stick, sprinkle a tiny bit of flour)."+
+                    "If the dough starts to spring back, set it aside to rest for a few minutes, then continue rolling."+
+                    "Repeat with the other pieces of dough."+
+    }
+
+
+    public String recipe(String milk, String flour, String butter, String salt, String sugar, String eggWhites, String sesameSeeds,String yeast, String breadName, String state, String recipe) {
+        // Operation for recipe
+        return recipe ;
+    }
+
+    // to String
+    @Override
+    public String toString() {
+        return " Yellow Bread " + "\n" +
+                "Milk = " + milk + "\n" +
+                "Flour = " + flour + "\n" +
+                "Butter = " + butter + "\n" +
+                "Salt = " + salt + "\n" +
+                "Sugar = " + sugar + "\n" +
+                "Egg = " + eggWhites + "\n" +
+                "Sesame= " + sesameSeeds + "\n" +
+                "Yeast = " + yeast + "\n" +
+                "Bread Name = " + breadName + "\n" +
+                "State = " + state + "\n" +
+                "Recipe = " + recipe + "\n";
+    }
+}
